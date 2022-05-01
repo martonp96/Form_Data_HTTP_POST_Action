@@ -31,7 +31,7 @@ async function run() {
     const response = await axios({
       method: 'POST',
       url: url,
-      headers: { 'Content-Type': 'multipart/form-data', ...headers },
+      headers: { 'Content-Type': 'multipart/form-data; boundary=xxx', ...headers },
       data: form,
       maxContentLength: 100000000,
       maxBodyLength: 1000000000
